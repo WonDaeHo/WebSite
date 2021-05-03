@@ -1,13 +1,49 @@
-*{
+/**************PC****************/
+@media all and (min-width:1024px){
+#wrap{
+    border: 1px solid red;
+    position:relative;
+    width: 90%;
     margin: 0 auto;
 }
+/***********인포 영역**************/
+.info{
+    order: 0;
+    position: absolute;
+    top: 30px;
+    top:1.875rem;
+    right: 30px;
+    right:1.875rem;
+    z-index: 30;
+    width: auto;
+    border-bottom: 0;
+}
+/************헤더 영역*************/
 .header{
+    order: 1;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    position: static;
+}
+.header *{
+    margin: 0 20px 0px 20px;
 }
 .content{
     display: flex;
     justify-content: center;
     flex-direction: row;
+}
+.menu_toggle_btn{
+    display: none;
+}
+/************슬라이드 영역*************/
+.slider{
+    order: 2;
+    width: 57%;
+}
+.slider img{
+    width: 400px;
+    margin-left: 40px;
+}
 }

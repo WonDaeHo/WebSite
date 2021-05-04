@@ -1,10 +1,91 @@
+/********* 태블릿용 CSS *********/
+@media all and (min-width:768px){
+#wrap{
+    flex-flow:column wrap;
+}
+.container{
+    
+    border: 1px solid red;
+}
+/***********인포 영역**************/
+.info{
+    order: 0;
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    border: 1px solid red;
+}
+/************헤더 영역*************/
+.header{
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 0.988rem;
+}
+.nav{
+    display: none;
+}
+.menu_toggle_btn img{
+    width: 30px;
+    height: 30px;
+    margin-top: 0.988rem;
+    margin-right: 0.988rem;
+}
+/************슬라이드 영역*************/
+.slider{
+    order: 2;
+    width: 62.5%;
+    /*550px / 1024px*/
+    margin: 0;
+}
+.slider img{
+    width: 100%;
+}
+/************* 컨텐츠 영역*************/
+.content{
+    order: 3;
+    display: flex;
+    width: 53.7109375%;
+    /*550px / 1024px*/
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.content p{
+    text-align: center;
+    margin: 2rem;
+    font-weight: bold;
+    color: #0076A8;
+}
+.content ul{
+    list-style: circle;
+    text-align: left;
+    white-space:nowrap;
+    color: #FEDD00;
+}
+.content ul li{
+    margin: 1rem;
+    font-size: 1rem;
+}
+.content span{
+    color: #000;
+}
+}
+
 /**************PC****************/
 @media all and (min-width:1024px){
 #wrap{
-    border: 1px solid red;
     position:relative;
-    width: 90%;
+    width: 90%;  
     margin: 0 auto;
+}
+.container{
+    display: flex;
+    border: 1px solid red;
 }
 /***********인포 영역**************/
 .info{
@@ -23,16 +104,21 @@
     order: 1;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content:flex-end;
     position: static;
 }
-.header *{
-    margin: 0 20px 0px 20px;
+.logo{
+    width:19.53125%;
+    /*200px / 1024px*/
 }
-.content{
+.nav{
+    width:80.46875%;
+    /*824px / 1024px*/
     display: flex;
-    justify-content: center;
     flex-direction: row;
+}
+.nav a{
+    margin-left: 5%;
 }
 .menu_toggle_btn{
     display: none;
@@ -40,10 +126,106 @@
 /************슬라이드 영역*************/
 .slider{
     order: 2;
-    width: 57%;
+    width: 53.7109375%;
+    /*550px / 1024px*/
+    margin: 0;
 }
 .slider img{
-    width: 400px;
-    margin-left: 40px;
+    width: 100%;
+}
+/************* 컨텐츠 영역*************/
+.content{
+    order: 3;
+    display: flex;
+    width: 53.7109375%;
+    /*550px / 1024px*/
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.content p{
+    text-align: center;
+    margin: 2rem;
+    font-weight: bold;
+    color: #0076A8;
+}
+.content ul{
+    list-style: circle;
+    text-align: left;
+    white-space:nowrap;
+    color: #FEDD00;
+}
+.content ul li{
+    margin: 1rem;
+    font-size: 1rem;
+}
+.content span{
+    color: #000;
+}
+/*************갤러리 영역*************/
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    order: 4;
+    width:24.4140625%;
+    /*250px / 1024px*/
+    text-align: center;
+    background-color: #F5E1A4;
+}
+.gallery img{
+    width:70%;
+}
+/*************랭크업 영역*************/
+.rankup{
+    width: 21.875%;
+    /*224px / 1024px*/
+    order: 5;
+    background-color: #FAE053;
+    text-align: center;
+}
+.rankup p{
+    font-size: 1.3rem;
+    margin: 10%;
+    color: #0076A8;
+}
+.rankup ol{
+    list-style-type: decimal;
+    text-align: left;
+    margin-left: 40%;
+    
+}
+.rankup li{
+    margin-bottom: 10%;
+}
+/*************배너 영역*************/
+.banner{
+    order: 6;
+    width: 24.4140625%;
+    /*250px / 1024px*/
+}
+.banner img{
+    width: 100%;
+}
+/*************소셜 영역*************/
+.social{
+    order:7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 21.875%;
+    /*224px / 1024px*/
+}
+/*************풋터 영역*************/
+.footer{
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    border-top: 1px solid #e1e2e3;
+}
+.footer p{
+    margin-top: 2rem;
 }
 }

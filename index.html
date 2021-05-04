@@ -12,8 +12,9 @@
 <body>
 <!------------전체 영역 DIV------------>
     <div id="wrap">
+<!--------------------------------------------------------TOP--------------------------------------------------------->
+
 <!----------------info----------------->
-    <info>
         <div class="info">
             <a href="#"><img src="Css/image/layout/icons/icon_home.png" alt="홈으로 이동할 버튼"></a>
             <a href="#"><img src="Css/image/layout/icons/icon_lang.png" alt="lang콘텐츠 사용으로 이동할 버튼"></a>
@@ -21,68 +22,46 @@
             <a href="#"><img src="Css/image/layout/icons/icon_login.png" alt="로그인화면으로 이동할 버튼"></a>
             <a href="#"><img src="Css/image/layout/icons/icon_search.png" alt="검색기능으로 이동할 버튼"></a>
         </div>
-    </info>
 <!---------------header---------------->
-    <header>
         <div class="header">
             <a href="index.html">
                 <div class="logo">
                     <img src="Css/image/layout/logo_m.png" alt="웹 사이트 로고 및 홈버튼">
                 </div>
             </a>
+        <div class="nav">
             <a href="index.html"><div>HOME</div></a>
             <a href="index.html"><div>INTRODUCE</div></a>
             <a href="index.html"><div>PHOTO GALLERY</div></a>
             <a href="index.html"><div>MYSTORY BOARD</div></a>
         </div>
-        <img class="menu_toggle_btn" src="Css/image/layout/menu_toggle_btn.png" alt="">
-    </header>
+        <div class="menu_toggle_btn">
+            <img src="Css/image/layout/menu_toggle_btn.png" alt="" onclick="menu_toggle_btn">
+        </div>
+        </div>
+
+<!--------------------------------------------------------MID--------------------------------------------------------->
+            
+    <div class="container">
+
 <!----------------slider---------------->
-    <slider>
         <div class="slider">
             <img src="Css/image/photo/slider_01.jpg" alt="">
         </div>
-    </slider>
-<!-----latest post, popular post-------->
-    <content>
-        <div class="content">
-            <div>
-                <p>LATEST POST</p>
-                    <ul>
-                        <li>이대림님 합격을 축하드립니..</li>
-                        <li>여긴 어디 난 누구인가요?</li>
-                        <li>서로를 닮아 기울어진 삶...</li>
-                        <li>소원을 담아 차오르는 달..</li>
-                        <li>하려다 만 괄호 속 말..</li>
-                    </ul>
-            </div>
-            <div>
-                <p>POPULAR POST</p>
-                    <ul>
-                        <li>이대림님 합격을 축하드립니..</li>
-                        <li>여긴 어디 난 누구인가요?</li>
-                        <li>서로를 닮아 기울어진 삶...</li>
-                        <li>소원을 담아 차오르는 달..</li>
-                        <li>하려다 만 괄호 속 말..</li>
-                    </ul>
-            </div>  
-        </div>
-    </content>
+    
+    
 <!----------------gallery----------------->
-    <gallery>
         <div class="gallery">
             <div>
-                <img src="Css/image/photo/gallery01.jpg" alt=""><br>
-                <p>코로나 동향 앱</p>
+                <!--<img src="Css/image/photo/gallery01.jpg" alt="">--> 
             </div>
+            <p>코로나 동향 앱</p>
             <div>
-                <img src="Css/image/photo/gallery02.jpg" alt=""><br>
-                <p>안주 맛집 추천 앱</p>
+                <!--<img src="Css/image/photo/gallery02.jpg" alt="">-->
             </div>
+            <p>코로나 동향 앱</p>
         </div>
-    </gallery>
- <!----------------rankup----------------->
-    <rankup>
+<!----------------rankup----------------->
         <div class="rankup">
             <p>인기 검색어</p>
             <ol>
@@ -98,34 +77,55 @@
                 <li>리엑트</li>
             </ol>
         </div>
-    </rankup>
+    </div>
+
+<!--------------------------------------------------------MID--------------------------------------------------------->
+
+    <div class="container">
+<!-----content-------->   
+        <div class="content">
+            <div>
+                <p>LATEST POST</p>
+                    <ul>
+                        <li><span>이대림님 합격을 축하드립니..</span></li>
+                        <li><span>여긴 어디 난 누구인가요?</span></li>
+                        <li><span>서로를 닮아 기울어진 삶...</span></li>
+                        <li><span>소원을 담아 차오르는 달..</span></li>
+                        <li><span>하려다 만 괄호 속 말..</span></li>
+                    </ul>
+            </div>
+            <div>
+                <p>POPULAR POST</p>
+                    <ul>
+                        <li><span>이대림님 합격을 축하드립니..</span></li>
+                        <li><span>여긴 어디 난 누구인가요?</span></li>
+                        <li><span>서로를 닮아 기울어진 삶...</span></li>
+                        <li><span>소원을 담아 차오르는 달..</span></li>
+                        <li><span>하려다 만 괄호 속 말..</span></li>
+                    </ul>
+            </div>
+            
+    </div> 
 <!----------------banner----------------->
-    <banner>
-        <div class="banner">
-            <img src="Css/image/layout/banner/banner01.jpg" alt=""><br>
-            <img src="Css/image/layout/banner/banner02.jpg" alt="">
-        </div>
-    </banner>
+            <div class="banner">
+                <img src="Css/image/layout/banner/banner01.jpg" alt=""><br>
+                <img src="Css/image/layout/banner/banner02.jpg" alt="">
+            </div>
 <!----------------social----------------->
-    <social>
-        <div>
-            <a><img src="Css/image/layout/icons/social01.png" alt=""></a>
-            <a><img src="Css/image/layout/icons/social02.png" alt=""></a>
-            <a><img src="Css/image/layout/icons/social03.png" alt=""></a>
-            <a><img src="Css/image/layout/icons/social04.png" alt=""></a>
-        </div>
-    </social>
+            <div class="social">
+                <a><img src="Css/image/layout/icons/social01.png" alt=""></a>
+                <a><img src="Css/image/layout/icons/social02.png" alt=""></a>
+                <a><img src="Css/image/layout/icons/social03.png" alt=""></a>
+                <a><img src="Css/image/layout/icons/social04.png" alt=""></a>
+            </div>
+
+    </div>
 <!----------------footer----------------->
-    <footer>
-        <div class="footer">
+            <div class="footer">
+                <p>COPYRIGHT 2021 MYPORTFOLIOSITE ALL RIGHTS RESERVED.</p>
+            </div>
 
-            <p>COPYRIGHT 2021 MYPORTFOLIOSITE ALL RIGHTS RESERVED.</p>
         </div>
-    </footer>
-
-</div>
-    
-
-
+    </div>
 </body>
 </html>

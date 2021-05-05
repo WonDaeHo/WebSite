@@ -1,3 +1,158 @@
+/********* 모바일용 CSS *********/
+#wrap{
+    display:flex;
+    flex-flow:column nowrap;
+    width:100%;
+    margin:0 auto;
+    max-width:1200px;
+    }
+/***********인포 영역**************/
+.info{
+    order: 0;
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    border: 1px solid red;
+}
+/************헤더 영역*************/
+.header{
+    display: flex;
+    position: relative;
+    order: 1;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.nav{
+    width: 100%;   
+}
+.nav li{
+    height: 50px;
+    border: 1px solid red;
+    vertical-align: middle;
+    background-color: #0076A8;
+}
+.menu_toggle_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0.988rem;
+    margin-right: 0.988rem;
+}
+/************슬라이드 영역*************/
+.slider{
+    order: 2;
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+}
+/************* 컨텐츠 영역*************/
+.content{
+    order: 3;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.content p{
+    margin: 3rem;
+    font-weight: bold;
+    color: #0076A8;
+}
+.content ul{
+    list-style: circle;
+    text-align: left;
+    white-space:nowrap;
+    color: #FEDD00;
+    margin-left: 2rem;
+}
+.content ul li{
+    margin: 2rem;
+    font-size: 1rem;
+}
+.content span{
+    color: #000;
+}
+/*************갤러리 영역*************/
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 4;
+    width:100%;
+    text-align: center;
+    background-color: #F5E1A4;
+    font-weight: bold;
+}
+.gallery img{
+    width:60%;
+}
+.gallery > *{
+    margin: 1rem;
+}
+/*************랭크업 영역*************/
+.rankup{
+    width: 100%;
+    order: 5;
+    background-color: #FAE053;
+}
+.rankup p{
+    font-size: 1.3rem;
+    margin: 5%;
+    color: #0076A8;
+}
+.rankup ol{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.rankup li{
+    width:34.916666666666666666666666666667%;
+    /* 115px ÷ 240px */
+    margin-top:0.938rem;
+    text-align:center;
+}
+.rankup li a{
+    display:block;
+    padding:10px 0;
+    padding:0.625rem 0;
+    border:1px solid #fff;
+    background:rgba(255,255,255,0.2);
+    border-radius:5px;
+}
+/*************배너 영역*************/
+.banner{
+    order: 6;
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+/*************소셜 영역*************/
+.social{
+    order:7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /*224px / 1024px*/
+}
+/*************풋터 영역*************/
+.footer{
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    border-top: 1px solid #e1e2e3;
+}
+.footer p{
+    margin-top: 2rem;
+}
 /********* 태블릿용 CSS *********/
 @media all and (min-width:768px){
 #wrap{

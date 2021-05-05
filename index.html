@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="./Css/Reset.css">
     <link rel="stylesheet" href="./Css/Styles.css">
     <link rel="shortcut icon" href="./Css/image/favicon.ico">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
     <title>WonDaeHo</title>
 </head>
 <body>
 <!------------전체 영역 DIV------------>
     <div id="wrap">
+
 <!--------------------------------------------------------TOP--------------------------------------------------------->
 
 <!----------------info----------------->
@@ -30,10 +32,12 @@
                 </div>
             </a>
         <div class="nav">
-            <a href="index.html"><div>HOME</div></a>
-            <a href="index.html"><div>INTRODUCE</div></a>
-            <a href="index.html"><div>PHOTO GALLERY</div></a>
-            <a href="index.html"><div>MYSTORY BOARD</div></a>
+            <ul>
+                <a href="index.html"><li>HOME<img src="Css/image/layout/sub_menu_toggle_btn.png" alt=""></li></a>
+                <a href="index.html"><li>INTRODUCE<img src="Css/image/layout/sub_menu_toggle_btn.png" alt=""></li></a>
+                <a href="index.html"><li>PHOTO GALLERY<img src="Css/image/layout/sub_menu_toggle_btn.png" alt=""></li></a>
+                <a href="index.html"><li>MYSTORY BOARD<img src="Css/image/layout/sub_menu_toggle_btn.png" alt=""></li></a>
+            </ul>
         </div>
         <div class="menu_toggle_btn">
             <img src="Css/image/layout/menu_toggle_btn.png" alt="" onclick="menu_toggle_btn">
@@ -42,7 +46,6 @@
 
 <!--------------------------------------------------------MID--------------------------------------------------------->
             
-    <div class="container">
 
 <!----------------slider---------------->
         <div class="slider">
@@ -53,11 +56,11 @@
 <!----------------gallery----------------->
         <div class="gallery">
             <div>
-                <!--<img src="Css/image/photo/gallery01.jpg" alt="">--> 
+                <img src="Css/image/photo/gallery01.jpg" alt="">  
             </div>
             <p>코로나 동향 앱</p>
             <div>
-                <!--<img src="Css/image/photo/gallery02.jpg" alt="">-->
+                <img src="Css/image/photo/gallery02.jpg" alt="">
             </div>
             <p>코로나 동향 앱</p>
         </div>
@@ -65,24 +68,24 @@
         <div class="rankup">
             <p>인기 검색어</p>
             <ol>
-                <li>반응형 웹</li>
-                <li>미디어 쿼리</li>
-                <li>뷰포트</li>
-                <li>CSS 트릭스</li>
-                <li>W3C</li>
-                <li>루크 W</li>
-                <li>자바스크립트</li>
-                <li>클리어 보스</li>
-                <li>플렉스</li>
-                <li>리엑트</li>
+                <li><a href="#">반응형 웹</a></li>
+                <li><a href="#">미디어 쿼리</a></li>
+                <li><a href="#">뷰포트</a></li>
+                <li><a href="#">CSS 트릭스</a></li>
+                <li><a href="#">W3C</a></li>
+                <li><a href="#">루크 W</a></li>
+                <li><a href="#">자바스크립트</a></li>
+                <li><a href="#">클리어 보스</a></li>
+                <li><a href="#">플렉스</a></li>
+                <li><a href="#">리엑트</a></li>
             </ol>
         </div>
-    </div>
+ 
 
 <!--------------------------------------------------------MID--------------------------------------------------------->
 
-    <div class="container">
-<!-----content-------->   
+
+<!-----content-------->    
         <div class="content">
             <div>
                 <p>LATEST POST</p>
@@ -104,9 +107,8 @@
                         <li><span>하려다 만 괄호 속 말..</span></li>
                     </ul>
             </div>
-            
-    </div> 
-<!----------------banner----------------->
+  </div>          
+<!----------------banner------------------>
             <div class="banner">
                 <img src="Css/image/layout/banner/banner01.jpg" alt=""><br>
                 <img src="Css/image/layout/banner/banner02.jpg" alt="">

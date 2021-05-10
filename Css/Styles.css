@@ -9,10 +9,12 @@
 /***********인포 영역**************/
 .info{
     order: 0;
+    width:100%;
+    height: 50px;
     display: flex;
     justify-content: space-around;
-    width: auto;
-    border: 1px solid red;
+    align-items: center;
+    border: 1px solid #efefef;
 }
 /************헤더 영역*************/
 .header{
@@ -29,12 +31,16 @@
 }
 .nav{
     width: 100%;   
+    display: none;
 }
 .nav li{
     height: 50px;
     border: 1px solid red;
     vertical-align: middle;
     background-color: #0076A8;
+}
+.sub_menu_toggle_btn{
+
 }
 .menu_toggle_btn{
     position: absolute;
@@ -98,6 +104,7 @@
 /*************랭크업 영역*************/
 .rankup{
     width: 100%;
+    padding-bottom: 10%;
     order: 5;
     background-color: #FAE053;
 }
@@ -115,6 +122,7 @@
     width:34.916666666666666666666666666667%;
     /* 115px ÷ 240px */
     margin-top:0.938rem;
+    margin-right: 0.938rem;
     text-align:center;
 }
 .rankup li a{
@@ -145,6 +153,7 @@
 }
 /*************풋터 영역*************/
 .footer{
+    order: 8;
     width: 100%;
     height: 4rem;
     text-align: center;
@@ -153,22 +162,37 @@
 .footer p{
     margin-top: 2rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /********* 태블릿용 CSS *********/
 @media all and (min-width:768px){
 #wrap{
-    flex-flow:column wrap;
-}
-.container{
-    
-    border: 1px solid red;
+    flex-flow:row wrap;
 }
 /***********인포 영역**************/
 .info{
     order: 0;
     display: flex;
     justify-content: space-around;
-    width: auto;
-    border: 1px solid red;
+    align-items: center;
+    border: 1px solid #efefef;
+    width: 100%;
+    height: 50px;
 }
 /************헤더 영역*************/
 .header{
@@ -176,6 +200,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+    height: 100px;
 }
 .logo{
     margin-left: 0.988rem;
@@ -183,36 +209,60 @@
 .nav{
     display: none;
 }
-.menu_toggle_btn img{
-    width: 30px;
-    height: 30px;
-    margin-top: 0.988rem;
-    margin-right: 0.988rem;
+.menu_toggle_btn{
+    top: 20%;
 }
 /************슬라이드 영역*************/
 .slider{
     order: 2;
-    width: 62.5%;
+    width: 60%;
     /*550px / 1024px*/
     margin: 0;
 }
 .slider img{
     width: 100%;
 }
+/*************랭크업 영역*************/
+.rankup{
+    width: 40%;
+    order: 3;
+    background-color: #FAE053;
+}
+.rankup p{
+    font-size: 1rem;
+    color: #0076A8;
+    font-weight: bold;
+}
+.rankup ol{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.rankup li{
+    width:34.916666666666666666666666666667%;
+    /* 115px ÷ 240px */
+    margin-top:0.538rem;
+    margin-right: 0.538rem;
+    text-align:center;
+}
+.rankup li a{
+    display:block;
+    padding:10px 0;
+    padding:0.625rem 0;
+    border:1px solid #fff;
+    background:rgba(255,255,255,0.2);
+    border-radius:5px;
+}
 /************* 컨텐츠 영역*************/
 .content{
-    order: 3;
+    order: 4;
     display: flex;
-    width: 53.7109375%;
-    /*550px / 1024px*/
+    width: 80%;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     font-size: 1.5rem;
 }
 .content p{
-    text-align: center;
-    margin: 2rem;
+    margin: 3rem;
     font-weight: bold;
     color: #0076A8;
 }
@@ -221,16 +271,73 @@
     text-align: left;
     white-space:nowrap;
     color: #FEDD00;
+    margin-left: 2rem;
 }
 .content ul li{
-    margin: 1rem;
+    margin: 2rem;
     font-size: 1rem;
 }
 .content span{
     color: #000;
 }
+/*************소셜 영역*************/
+.social{
+    order:5;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.social img{
+    margin: 30% 0 30% 0;
+}
+/*************갤러리 영역*************/
+.gallery{
+    order: 6;
+    flex-flow: row wrap;    
+    width:70%;
+    background-color: #F5E1A4;
+    font-weight: bold;
+    justify-content: space-around;
+}
+.gallery_1{
+    order: 0;
+    width: 40%;
+}
+.gallery_2{
+    order: 2;
+}
+.gallery_3{
+    order: 1;
+    width: 40%;
+}
+.gallery_4{
+    order: 3;
+}
+.gallery img{
+    width:100%;
+}
+/*************배너 영역*************/
+.banner{
+    order: 7;
+    width: 30%;
+}
+.banner img{
+    width: 100%;
+}
+/*************풋터 영역*************/
+.footer{
+    order: 8;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    border-top: 1px solid #e1e2e3;
+}
+.footer p{
+    margin-top: 2rem;
+}
+}
 /**************PC****************/
 @media all and (min-width:1024px){
 #wrap{
@@ -288,9 +395,45 @@
 .slider img{
     width: 100%;
 }
+/*************갤러리 영역*************/
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    order: 3;
+    width:24.4140625%;
+    /*250px / 1024px*/
+    text-align: center;
+    background-color: #F5E1A4;
+}
+.gallery img{
+    width:70%;
+}
+/*************랭크업 영역*************/
+.rankup{
+    width: 21.875%;
+    /*224px / 1024px*/
+    order: 4;
+    background-color: #FAE053;
+    text-align: center;
+}
+.rankup p{
+    font-size: 1.3rem;
+    margin: 10%;
+    color: #0076A8;
+}
+.rankup ol{
+    list-style-type: decimal;
+    text-align: left;
+    margin-left: 40%;
+    
+}
+.rankup li{
+    margin-bottom: 10%;
+}
 /************* 컨텐츠 영역*************/
 .content{
-    order: 3;
+    order: 5;
     display: flex;
     width: 53.7109375%;
     /*550px / 1024px*/
@@ -318,42 +461,7 @@
 .content span{
     color: #000;
 }
-/*************갤러리 영역*************/
-.gallery{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    order: 4;
-    width:24.4140625%;
-    /*250px / 1024px*/
-    text-align: center;
-    background-color: #F5E1A4;
-}
-.gallery img{
-    width:70%;
-}
-/*************랭크업 영역*************/
-.rankup{
-    width: 21.875%;
-    /*224px / 1024px*/
-    order: 5;
-    background-color: #FAE053;
-    text-align: center;
-}
-.rankup p{
-    font-size: 1.3rem;
-    margin: 10%;
-    color: #0076A8;
-}
-.rankup ol{
-    list-style-type: decimal;
-    text-align: left;
-    margin-left: 40%;
-    
-}
-.rankup li{
-    margin-bottom: 10%;
-}
+
 /*************배너 영역*************/
 .banner{
     order: 6;
@@ -375,6 +483,7 @@
 }
 /*************풋터 영역*************/
 .footer{
+    order: 8;
     width: 100%;
     height: 4rem;
     text-align: center;

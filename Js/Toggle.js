@@ -1,5 +1,5 @@
-$(document).ready(function()
-{
- $("#menu_toggle_btn").click(function(){
-     $("").toggle();
- }
+jQuery(function ($) {
+    $(".menu_toggle_btn").click(function () {
+        $(".nav").stop().slideToggle("fast");
+    });
+});

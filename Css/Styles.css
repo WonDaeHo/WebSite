@@ -410,13 +410,13 @@ a{
     /*200px / 1024px*/
 }
 .nav{
+    display: block;
     width:80.46875%;
     /*824px / 1024px*/
     display: flex;
     flex-direction: row;
     margin: 0;
     text-align: left;
-
 }
 .nav ul{
     display: flex;

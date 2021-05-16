@@ -1,0 +1,21 @@
+@media all and (min-width:1024px){
+    #wrap{
+        position:relative;
+        width: 90%;  
+        margin: 0 auto;
+        background-image: url('/Css/image/photo/mainbackground.jpg');
+    }
+    /***********인포 영역**************/
+    .info{
+        order: 0;
+        position: absolute;
+        top:1.875rem;
+        right:1.875rem;
+        z-index: 10;
+        width: auto;
+        border: none;
+    }
+    .info img{
+        margin-left: 1rem;
+    }
+}
